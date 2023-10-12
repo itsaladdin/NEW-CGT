@@ -1,0 +1,441 @@
+body
+{
+    background-color: #03001C; 
+    filter: brightness(120%);
+    overflow-x: hidden;
+}
+.hamburger-menu{
+  display: none;
+}
+nav
+{
+    height: 70px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: black;
+    position: sticky;
+    top: 0;
+    margin-top: 20px;
+    border-bottom: 1px snow solid;
+    border-top: 1px snow  solid;
+  }
+  .ul1{
+    margin-top: 30px;
+  }
+nav ul li
+{
+    list-style: none;
+    color: white; 
+    font-size: medium;
+    margin-top: -20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#ul1 img
+{
+    float: left;
+    width: 100px;
+    height: 80px;
+    margin-top: 0%;
+}
+a
+{
+    text-decoration: none;
+}
+#active
+{ 
+  background-color: #04AA6D;
+  color: white;
+  height: 5px;
+}
+#ul2
+{
+    margin-top: 0;
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+}
+#ul2 a
+{
+    width: 100px;
+    margin-top: 40%;
+}
+#sec1 video
+{
+    margin-top: 20px;
+    width: 80%;
+    border: 1px solid white;
+    margin-left:10%;
+    border-radius: 50px;
+    box-shadow: inset 5px 3px 4px rgba(0, 0, 0, 0.4);
+}
+#sec1 h3
+{
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#sec1 p
+{
+    font-size: 20px;
+    width: 53%;
+    margin-left: 23%;
+    color: white;
+    text-align: center;
+}
+#open_form
+{
+    font-size: 20px;
+    width: 50%;
+    color: black;
+    border-radius: 50px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: white;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+#open_form:hover
+{
+    font-size: 20px;
+    width: 50%;
+    color: white;
+    border-radius: 50px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: green;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.snart
+{
+    font-size: 20px;
+    width: 50%;
+    color: white;
+    border-radius: 50px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: grey;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.snart:hover
+{
+    font-size: 20px;
+    width: 50%;
+    color: white;
+    border-radius: 50px;
+    height: 50px;
+    text-transform: uppercase;
+    cursor: pointer;
+    background-color: red;
+    text-align: center;
+    margin-left: 25%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.red
+{ 
+  font-size: 50px;
+  text-align: center;
+  margin-bottom: -1%;
+  color: red;
+}
+#sec1 h3:hover
+{
+    color: lightskyblue;
+    transition: .3s;
+    cursor: default;
+}
+#inaside 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+    margin-top: 5%;
+}
+#sec2
+{
+  flex: 0 0 33.333333%;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-top: 100px;
+}
+#sec2 img
+{
+    width: 80%;
+    height: 100%;
+    border-radius: 10%;
+}
+#sec2 img:hover
+{
+    width: 80%;
+    height: 100%;
+    border-radius: 0%;
+    transition: .5s;
+} 
+#sec2 h3
+{
+    color: white;
+    text-align: center;
+    cursor: grab;
+}
+#sec2 button
+{
+    width: 200px;
+    height: 35px;
+    border-radius:10px;
+    text-align: center;
+    cursor: pointer;
+}
+#sec2 button:hover
+{
+    width: 200px;
+    height: 35px;
+    border-radius:0px;
+    background-color: green;
+    color: white;
+    text-transform: uppercase;
+    transition: 1s;
+}
+/* -------------footer------------- */
+footer 
+{
+  color: white;
+  background-color:transparent;
+  padding-top: 1%;
+  background-color: black;
+  margin-bottom: 1%;
+  margin-top: 4%;
+  padding-bottom: 1%;
+  border-bottom: 1px snow solid;
+  border-top: 1px snow  solid;
+}
+  .container
+{
+    display: grid;
+    grid-template-columns: 20% 10% 40%;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+  
+  .row h3 
+{
+    margin-top:0;
+    margin-bottom:12px;
+    font-weight:bold;
+    font-size:16px;
+}
+  
+  .row ul 
+{
+    padding:0;
+    list-style:none;
+    line-height:1.6;
+    font-size:14px;
+    margin-bottom:0;
+}
+  
+  .row ul a 
+{
+    color:inherit;
+    text-decoration:none;
+    opacity:0.6;
+}
+  
+  .row ul a:hover 
+{
+    opacity:0.8;
+}
+  .item.text 
+{
+    margin-bottom:36px;
+    margin-top: -23px;
+}
+  
+  .item.text p
+{
+    opacity:0.6;
+    margin-bottom:0;
+}
+  
+  .item.social 
+{
+  text-align:center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  margin-left: -40px;
+  margin-bottom: 25px;
+}
+  
+  .item.social > a 
+{
+  font-size:20px;
+  width:36px;
+  height:36px;
+  line-height:36px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  box-shadow:0 0 0 1px rgba(255,255,255,0.4);
+  margin:0 8px;
+  color:#fff;
+  opacity:0.75;
+}
+  
+  .item.social > a:hover 
+{
+    opacity:0.9;
+}
+  .copyright 
+{
+    text-align:center;
+    padding-top:5px;
+    opacity:0.3;
+    margin-right: 375px;
+    font-size:13px;
+    margin-bottom:0;
+    width: 130px;
+}
+.yousef{
+  display: flex;
+  gap: 100px;
+  margin-bottom: 30px;
+  margin-top: -65px;
+  margin-left: 100px;
+}
+  .footer-img
+{
+    height: 80px;
+    width: 120px;
+    margin-left: 0px;
+    margin-top: -20px;
+}
+  .yousef{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 30px;
+    margin-top: -65px;
+    margin-left: 100px;
+  }
+  
+ 
+#menu__toggle
+{
+  display: none;
+}
+.menu__btn
+{
+  display: none;
+}
+  /* -------------------------Home-About----------------------------- */
+  /* -------------------------Home-About----------------------------- */
+
+  .Team-header
+   {
+    text-align: center;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin-top: 8%;
+   }
+   #Team1
+   {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 3%;
+    width: 90%;
+    margin-left: 5%;
+    margin-bottom:5% ;
+    margin-top: 3%;
+    color: snow;
+   }
+   .sec-team
+   {
+    background-color: rgb(69, 69, 69);
+    border-radius: 4rem;
+    height: 110%;
+   }
+   .sec-team img
+   {
+    width: 80%;
+    height: 100%;
+    margin-top: 10%;
+    margin-left:10%;
+   }
+   .sec-team h2
+   {
+    margin-top: 5%;
+    text-align: center;
+   }
+   .sec-team p
+   {
+    margin-top: 5%;
+    text-align: center;
+   }
+   .RMoreClass{
+    display: none;
+   }
+   #RMore{
+    display: none;
+  }
+  /* CSS styles for the feedback form (hidden by default) */
+  #feedback-form {
+   display: none;
+   max-width: 300px;
+   position: absolute;
+   border: 1px solid white;
+   width: auto;
+   height: auto;
+   margin-top: -18%;
+   margin-left: 85% ;
+  }
+  #feedback-form h2
+  {
+  text-align: center;
+  color: snow;
+  }
+  #feedback-button
+  {
+  position: sticky;
+  color: snow;
+  margin-left: 97%;
+  font-size: 50px;
+  cursor: pointer;
+  }
+  #feedback-text
+  {
+  margin-left: 20px;
+  }
+  #sub
+  {
+  margin-left: 35%;
+  width: 40%;
+  margin-bottom: 5%;
+  }
+  .style
+  {
+    color: snow;
+    text-align: center;
+    margin-top: 25%;
+    text-transform: uppercase;
+  }
+  .fa-comments
+  {
+    display: none;
+  }
