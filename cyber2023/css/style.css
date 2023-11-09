@@ -1,7 +1,8 @@
+ @import url('https://fonts.cdnfonts.com/css/bloody');             
 body
 {
     background-color: #03001C; 
-    filter: brightness(120%);
+    filter: brightness(100%);
     overflow-x: hidden;
 }
 .hamburger-menu{
@@ -18,6 +19,7 @@ nav
     margin-top: 20px;
     border-bottom: 1px snow solid;
     border-top: 1px snow  solid;
+    z-index: 2;
   }
   .ul1{
     margin-top: 30px;
@@ -74,17 +76,60 @@ a
 #sec1 h3
 {
     font-size: 80px;
-    color: white;
+    color: red;
     text-align: center;
     margin-bottom: 10px;
+    font-family: 'Bloody', sans-serif;                                           
+}
+#popup-container {
+  display: none;
+  position: fixed;
+  width: 40%;
+  height: 20%;
+  text-align: center;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #F8AC2B;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+}
+#popup-container img {
+  width: 105.4%;
+  margin-left: -2.6%;
+  height: 100%;
+  margin-top: -2.5%;
+}
+#popup-container button {
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-family: 'Bloody', sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  transition: all .3s ease-in-out;
 }
 #sec1 p
 {
     font-size: 20px;
     width: 53%;
     margin-left: 23%;
+    color: red;
+    text-align: center;
+    opacity: 0.3;
+    font-family: 'Bloody', sans-serif;                                           
+}
+#sec1 p:hover
+{
+    font-size: 20px;
+    width: 53%;
+    margin-left: 23%;
     color: white;
     text-align: center;
+    opacity: 0.5;
 }
 #open_form
 {
@@ -238,6 +283,8 @@ footer
     margin-bottom:12px;
     font-weight:bold;
     font-size:16px;
+    font-family: 'Bloody', sans-serif;
+    color: red;
 }
   
   .row ul 
@@ -247,6 +294,8 @@ footer
     line-height:1.6;
     font-size:14px;
     margin-bottom:0;
+    font-family: 'Bloody', sans-serif;
+    color: red;
 }
   
   .row ul a 
@@ -264,6 +313,8 @@ footer
 {
     margin-bottom:36px;
     margin-top: -23px;
+    font-family: 'Bloody', sans-serif;
+    color: red;
 }
   
   .item.text p
@@ -310,6 +361,8 @@ footer
     font-size:13px;
     margin-bottom:0;
     width: 130px;
+    font-family: 'Bloody', sans-serif;
+    color: red;
 }
 .yousef{
   display: flex;
@@ -400,10 +453,12 @@ footer
    max-width: 300px;
    position: absolute;
    border: 1px solid white;
+   background-color: black;
    width: auto;
    height: auto;
-   margin-top: -18%;
-   margin-left: 85% ;
+   margin-left: 78%;
+   margin-top: 10%;
+   z-index: -1;
   }
   #feedback-form h2
   {
@@ -414,13 +469,15 @@ footer
   {
   position: sticky;
   color: snow;
-  margin-left: 97%;
+  margin-left: 85%;
   font-size: 50px;
   cursor: pointer;
+  display: block;
+  height: auto;
   }
   #feedback-text
   {
-  margin-left: 20px;
+  margin-left: 10%;
   }
   #sub
   {
@@ -438,4 +495,144 @@ footer
   .fa-comments
   {
     display: none;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto ;
+    background-color: transparent;
+    padding: 10px;
+  }
+  .grid-item {
+    background:transparent;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-bottom: 1px solid white;
+  }
+  .grid-item img
+  {
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+    float: left;
+  }
+  a
+  {
+    text-decoration: none;
+    color: #F6E3C5;
+    text-align: center;
+  }
+  h5
+  { 
+    color: #fff;
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 13%;
+  }
+  #sec2 .close
+  {
+    color: red;
+    font-family: 'Bloody', sans-serif;
+  }
+  #sec2 .open
+  {
+    color: green;
+    font-family: 'Bloody', sans-serif;
+  }
+  .slideshow-container {
+   max-width: 1000px;
+   position: static;
+   margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+    margin-top: 5%;
+  }
+
+  .text1 {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    width: 53%;
+    text-align: center;
+  }
+  .text2 {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+  .text3 {
+    color: white;
+    margin-left: 10%;
+    text-align: center;
+    margin-top: 4%;
+    width: 80%;
+    font-size: 25px;
+  }
+  .text4 {
+    display: flex;
+    gap: 5%;
+    margin-left: 30%;
+    color: white;
+    font-size: 20px;
+    margin-top: 3%;
+    text-align: center;
+  }
+  .text41 {
+    display: flex;
+    gap: 5%;
+    margin-left: 35%;
+    color: white;
+    font-size: 30px;
+    margin-top: 3%;
+    text-align: center;
+  }
+  .text41 button{
+    background-color: green;
+    width: 300px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    border-radius: 4rem;
+    border: none;
+    cursor: pointer;
+  }
+  .work h2 {
+    color: white;
+    font-size: 50px;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-align: center;
+  }
+  .work img {
+    margin-left: 7%;
+    margin-top: 5%;
+  }
+  .Rtext {
+    color: white;
+    font-size: 50px;
+    margin-top: 10%;
+    text-align: center;
+  }
+  .Reco {
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 6%;
+    margin-left: 6%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 10px;
+  }
+  .Reco p {
+    flex: 0 0 33.333333%;
+    color: black;
+    margin-left: 15%;
   }

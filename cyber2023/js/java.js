@@ -15,38 +15,38 @@ function pingis(){
   alert("Anmälningen är stängt");
 }
 function schack(){
-  window.open("../../html/activity/schack-about.html");
+  window.open("/html/activity/schack-about.html");
 }
 function pilkastning(){
-  window.open("../../html/activity/pilkastning-about.html");
+  window.open("cyberr2023/html/activity/pilkastning-about.html");
 }
 function spel(){
-  window.open("../../html/activity/gaming-about.html");
+  window.open("cyber2023/html/activity/gaming-about.html");
 }
 function runing(){
-  window.open("../../html/activity/löpning-about.html");
+  window.open("cyber2023/html/activity/löpning-about.html");
 }
 function speling(){
-  window.open("../../html/activity/rättstavning-about.html");
+  window.open("cyber2023/html/activity/rättstavning-about.html");
 }
 // other functions fror sites
 function homaside1(){
-  window.open("../../html/activity/pingis-about.html");
+  window.open("cyber2023/html/activity/pingis-about.html");
 }
 function homaside2(){
-  window.open("../../html/activity/schack-about.html");
+  window.open("cyber2023/html/activity/schack-about.html");
 }
 function homaside3(){
-  window.open("../../html/activity/pilkastning-about.html");
+  window.open("cyber2023/html/activity/pilkastning-about.html");
 }
 function homaside4(){
-  window.open("../../html/activity/gaming-about.html");
+  window.open("cyber2023/html/activity/gaming-about.html");
 }
 function homaside5(){
-  window.open("../../html/activity/löpning-about.html");
+  window.open("cyber2023/html/activity/löpning-about.html");
 }
 function homaside6(){
-  window.open("../../html/activity/rättstavning-about.html");
+  window.open("cyber2023/html/activity/rättstavning-about.html");
 }
 
 let mybutton = document.getElementById("myBtn");

@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=, initial-scale=1.0">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
         <link rel="icon" href="../../img/logo/cyber.logo-black.png">
         <link rel="stylesheet" href="../../css/style.css">
         <link rel="stylesheet" href="../../css/action.css">
@@ -70,9 +71,27 @@
                 </div>
 
                 <h3 class="text-center">UNO Turnering</h3>
-                <p>Kommer snart</p>
-                <button onclick=""class="snart">KOMMER SNART</button>
+
+                <div id="feedback-form">
+                    <h2>Ger oss din feedback här</h2>
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeBJE4EV0NO7RktTn-7JJ5k2q7C_ds3__OOMF6M-AWaIrp6gA/formResponse"method="POST"id="user-feedback" >
+                        <!-- <label for="feedback-text">Your Feedback:</label> -->
+                        <textarea name="entry.2071656823"id="feedback-text" cols="30" rows="10" placeholder="Meddelande"></textarea>
+                        <button type="submit" id="sub" class="sub">Skicka</button>
+                    </form>
+                </div> 
+
+                <p>Vi kommer köra med 4 spelare, och reglerna kommer vara Classic UNO men med stack på. Det kommer att spelas 3 omgångar och vi kommer 
+                    räkna ihop poängen efter varje omgång på en bit papper. Den spelare som först blir av med sina kort, får poäng för de kort som 
+                    motståndarna har kvar. Poängen räknas så här: Sifferkort: Värdet på kortet (0-9) Dra-två-kort, Vänd-kort & Hoppa-över-kort: 
+                    20 poäng Färgval Kort & Dra-fyra-kort: 50 poäng du genom ha vunnit 2 omgångar eller har mest poäng. 2 personer 
+                    kommer få gå vidare och de 2 andra går ut i turneringen.</p>
+
+                <h4 class="red">Anmälningen stängts om</h4>
+                <p id="demo" style="font-size:30px"></p>
+                <button onclick="open_form()" id="open_form"> Intresänmallan</button>
             </section>
+            <i class="fa fa-comments" id="feedback-button"></i>
     </main>
     
     <footer style="background-color: black;">
@@ -114,5 +133,37 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="../../js/action.js"></script>
 <script src="../../js/java.js"></script>
+<script>
+    // Set the date we're counting down to
+var countDownDate = new Date("nov 18, 2023 18:00:00").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "Anmälningen har stängt";
+    alert("Hejsan!! Anmälningen har stängt")
+    window.location.href = "../../../index.html";
+  }
+}, 1000);
+</script>
 </body>
 </html>

@@ -130,6 +130,13 @@ div.geS5n.AgroKb.oQYVNd
   overflow-wrap: break-word;
   width: 60%;
 }
+#sec1 p:hover
+{
+  text-align: center;
+  margin-left: 20%;
+  overflow-wrap: break-word;
+  width: 60%;
+}
 .snart
 {
   text-align: center;

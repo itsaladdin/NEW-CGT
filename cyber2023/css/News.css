@@ -398,6 +398,7 @@ footer
     text-align: center;
     justify-content: center;
     margin-top: 5%;
+    color: black;
     margin-bottom: 10%;
     margin-left: 0%;
     width: 200%;
@@ -432,4 +433,8 @@ footer
     font-family: cursive;
     font-size: 1pc;
     margin-top: -10%;
+  }
+  .date a
+  {
+    color: black;
   }

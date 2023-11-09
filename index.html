@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.cdnfonts.com/css/bloody" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="icon" href="cyber2023/img/logo/cyber.logo-black.png">
     <link rel="stylesheet" href="cyber2023/css/style.css">
@@ -39,7 +40,7 @@
 <main>
     <section id="sec1">
         <video autoplay loop muted playsinline>
-            <source src="cyber2023/video/you1!.mp4" type="video/mp4" />
+            <source src="cyber2023/video/hallowen.mp4" type="video/mp4" />
             </video>
             <input id="RMore" type="checkbox">
             <h3 class="text-center">Välkommen till Cyber Got Talent!</h3>
@@ -58,24 +59,30 @@
             <label class="RMoreClass" for="RMore">läs mer</label>
 
     </section>
-</div>
+    <!-- Pop-up Container -->
+    <div id="popup-container">
+        <!-- <h1>Cyber Got Talent</h1>
+        <p>This is a pop-up message with a blurry background.</p> -->
+        <img src="cyber2023/img/home/halloween/popup.png" alt="">
+        <button onclick="closePopup()">STÄNG</button>
+    </div>
 <aside id="inaside">
-    <section id="sec2" onclick="pingis()">
-        <a href="cyber2023/html/activity/pingis-about.html">
+  
+    <section id="sec2" onclick="spel()">
+        <a href="cyber2023/html/activity/gaming-about.html">
         <div class="img">
-            <img src="cyber2023/img/home/close-pingis.png" alt="">
-            <h3>Pingis Turnering</h3>
-            <h3 style="color: red;">STÄGNT</h3> 
+            <img src="cyber2023/img/home/halloween/hallow-uno.png" alt="">
+            <h3>UNO Turnering</h3>
+             <h3 class="open">ÖPPET</h3> 
             <button>MER INFO</button>
         </div></a>
     </section>
-
     <section id="sec2" onclick="schack()">
         <a href="cyber2023/html/activity/schack-about.html">
         <div class="img">
-            <img src="cyber2023/img/home/schack(3).jpg" alt="">
+            <img src="cyber2023/img/home/halloween/hallow-scack.png" alt="">
             <h3>Schack Turnering</h3>
-            <!-- <h3 style="color: red;">STÄGNT</h3> -->
+            <!-- <h3 class="styler">STÄGNT</h3> -->
             <button>MER INFO</button>
         </div></a>
     </section>
@@ -83,18 +90,9 @@
     <section id="sec2" onclick="pilkastning()">
         <a href="cyber2023/html/activity/pilkastning-about.html ">
         <div class="img">
-            <img src="cyber2023/img/home/pil(2).jpg" alt="">
+            <img src="cyber2023/img/home/halloween/hallow-pill.png" alt="">
             <h3>Pilkastnings Turnering</h3>
-            <!-- <h3 style="color: red;">STÄGNT</h3> -->
-            <button>MER INFO</button>
-        </div></a>
-    </section>
-    <section id="sec2" onclick="spel()">
-        <a href="cyber2023/html/activity/gaming-about.html">
-        <div class="img">
-            <img src="cyber2023/img/home/spel(4).jpg" alt="">
-            <h3>UNO Turnering</h3>
-            <!-- <h3 style="color: red;">STÄGNT</h3> -->
+            <!-- <h3 class="styler">STÄGNT</h3> -->
             <button>MER INFO</button>
         </div></a>
     </section>
@@ -102,9 +100,9 @@
     <section id="sec2" onclick="runing()">
         <a href="cyber2023/html/activity/löpning-about.html">
         <div class="img">
-            <img src="cyber2023/img/home/löpning(5).jpg" alt="">
+            <img src="cyber2023/img/home/halloween/hallow-run.png" alt="">
             <h3>Löpnings Turnering</h3>
-            <!-- <h3 style="color: red;">STÄGNT</h3> -->
+            <!-- <h3 class="styler">STÄGNT</h3> -->
             <button>MER INFO</button>
         </div></a>
     </section>
@@ -112,9 +110,19 @@
     <section id="sec2" onclick="speling()">
         <a href="cyber2023/html/activity/rättstavning-about.html">
         <div class="img">
-            <img src="cyber2023/img/home/spelling(3).jpg" alt="">
+            <img src="cyber2023/img/home/halloween/hallow-stavn.png" alt="">
             <h3>Rättstavnings Turnering</h3>
-            <!-- <h3 style="color: red;">STÄGNT</h3> -->
+            <!-- <h3 class="styler">STÄGNT</h3> -->
+            <button>MER INFO</button>
+        </div></a>
+    </section>
+
+    <section id="sec2" onclick="pingis()">
+        <a href="cyber2023/html/tournament/tournament-table-pingis-2023.html">
+        <div class="img">
+            <img src="cyber2023/img/home/halloween/hallow-pingis.png" alt="">
+            <h3>Pingis Turnering</h3>
+            <h3 class="close">STÄGNT</h3> 
             <button>MER INFO</button>
         </div></a>
     </section>
@@ -135,7 +143,7 @@
         <div class="row">
             <h3>About</h3>
                 <ul>
-                    <li><a href="https://www.cybergymnasiet.se/">Cybergymnasiet</a></li>
+                    <li><a href="cyber2023/html/all-in/sponser.html">Sponsorer</a></li>
                     <li><a href="cyber2023/html/all-in/Team.html">Team</a></li>
                     <li><a href="cyber2023/html/all-in/hosting.html">Hosting</a></li>
                 </ul>
@@ -154,14 +162,15 @@
             <a href="https://www.snapchat.com/add/cybergottalent"><i class="icon ion-social-snapchat"></i></a>
             <a href="https://www.instagram.com/cybergottalent/"><i class="icon ion-social-instagram"></i></a>
         </div>
-        <a href="#"><img class="footer-img" src="cyber2023/img/logo/logo-cybergymnasiet.png" alt=""></a>
+        <a href="https://www.cybergymnasiet.se/"><img class="footer-img" src="cyber2023/img/logo/logo-cybergymnasiet.png" alt=""></a>
         <p class="copyright">Cybergymnasiet © 2023</p>
     </div>
 </footer>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
 <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
-<script src="../../js/action.js"></script>
-<script src="../../js/java.js"></script>
+<script src="/js/java.js"></script>
+<script src="cyber2023/js/action.js"></script>
+<script src="cyber2023/js/closePopup.js"></script>
 </body>
 </html>
