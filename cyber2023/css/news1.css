@@ -34,7 +34,7 @@ nav ul li
     height: 80px;
     margin-top: -2px;
 }
-a
+#ul1 a
 {
     text-decoration: none;
 }
@@ -48,7 +48,7 @@ a
 {
  
     display: grid;
-    grid-template-columns:auto auto auto auto;
+    grid-template-columns:repeat(5,auto);
     justify-content: space-evenly;
     text-align: center;
     width: 100%;
@@ -58,117 +58,18 @@ a
 {
     width: 100px;
     margin-top: 30px;
+    text-decoration: none;
 }
-#sec1 video
-{
-    margin-top: 100px;
-    width: 80%;
-    border: 1px solid white;
-    margin-left: 150px;
-    border-radius: 50px;
-    box-shadow: inset 5px 3px 4px rgba(0, 0, 0, 0.4);
-}
-#sec1 h3
-{
-    font-size: 80px;
-    color: white;
-    text-align: center;
-    margin-bottom: 10px;
-}
-#sec1 p
-{
-    font-size: 20px;
-    width: 83%;
-    margin-left: 100px;
-    color: white;
-    text-align: center;
-}
-#sec1 button
-{
-    font-size: 20px;
-    width: 50%;
-    color: white;
-    border-radius: 50px;
-    height: 50px;
-    text-transform: uppercase;
-    cursor: pointer;
-    background-color: green;
-    text-align: center;
-    margin-left: 350px;
-    margin-top: 30px;
-    margin-bottom: 50px;
-}
-#sec1 h3:hover
-{
-    color: lightskyblue;
-    transition: .3s;
-    cursor: default;
-}
-#inaside 
-{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-bottom: 100px;
-}
-#sec2
-{
-  flex: 0 0 33.333333%;
-  text-align: center;
-  margin-top: 100px;
-}
-#sec2 img
-{
-    width: 300px;
-    height: 250px;
-    border-radius: 10%;
-}
-#sec2 img:hover
-{
-    width: 300px;
-    height: 250px;
-    border-radius: 0%;
-    transition: .5s;
-}
-#sec2 h3
-{
-    color: white;
-    text-align: center;
-    cursor: grab;
-}
-#sec2 button
-{
-    width: 200px;
-    height: 35px;
-    border-radius:10px;
-    text-align: center;
-    cursor: pointer;
-}
-#sec2 button:hover
-{
-    width: 200px;
-    height: 35px;
-    border-radius:0px;
-    background-color: green;
-    color: white;
-    text-transform: uppercase;
-    transition: 1s;
-}
+
   /* -------------------------Home-About----------------------------- */
-  
-  .newstext
+.newstext
 {
-    color: snow;
-    text-align: center;
-    font-size: 50px; 
-    margin: 1% 0;
+      color: snow;
+      text-align: center;
+      font-size: 50px; 
+      margin: 1% 0;
 }
-  #newsbody
-{
-  background-color: #03001C;
-  color: snow;
-}
- .newsbar
+.newsbar
 {
   display: flex;
   justify-content: center;
@@ -178,43 +79,6 @@ a
 }
 .newsbar h4{
   cursor: pointer;
-}
-#dChange{
-  display: none;
-}
-#newsaside a{
-  color: white;
-}
- #newsaside
-{
-  display: grid;
-  grid-template-columns: 50% 25% 20%;
-  gap: 2%;
-  margin-top: 2%;
-}
-#leftsec img
-{
-  width: 100%;
-  height: auto;
-  margin-left: 2%;
-}
-#middle img
-{
-  width: 100%;
-  height: auto;
-}
- .leftnews .heads1
-{
-  font-size: 30px; 
-}
- .leftnews .heads2
-{
-  font-size: 20px;
-}
-.leftnews .heads3
-{
-  font-size: 150%;
-  margin-top: -1px;
 }
 .roundimg
 {
@@ -392,9 +256,154 @@ footer
     margin-bottom: 30px;
     margin-top: -65px;
     margin-left: 100px;
-  }
-  #year
-  {
+}
+#big
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30%;
+    margin-top: 1%;
+}
+#big img
+{
+    width: 60%;
+    height: 70vh;
+    border-radius: 4rem;
+}
+#big h1
+{
+    font-size: 20px;
+    width: 50%;
+    color: white;
+    margin-left: 5%;
+    text-align: center;
+}
+#big p
+{
+    font-size: 15px;
+    width: 50%;
+    margin-left: 5%;
+    color: grey;
+    text-align: center; 
+}
+#big span
+{
+    font-size: 15px;
+    width: 70%;
+    color: green;
+    text-align: center; 
+    margin-left: 2%;
+}
+#big hr
+{
+    height: 1px;
+    width: 80%;
+    margin-left: -10%;
+}
+.content
+{
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+
+#small
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 10%;
+  margin-top: 1%;
+}
+#small img
+{
+    width: auto;
+    height: 350px;
+    border-radius: 4rem;
+}
+#small h1
+{
+    font-size: 20px;
+    width: 75%;
+    color: white;
+    margin-left: 0%;
+    text-align: center;
+}
+#small p
+{
+    font-size: 15px;
+    width: 100%;
+    color: grey;
+    margin-left: -10%;
+    text-align: center; 
+}
+#small span
+{
+    font-size: 15px;
+    width: 70%;
+    color: green;
+    text-align: center; 
+    margin-left: 2%;
+}
+#small div
+{
+  width: 35%;
+  margin-left: 0%;
+}
+.rightnews
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background-color:transparent ;
+    gap: 30px;
+    margin-left:-12% ;
+    margin-top: 5%;
+}
+.rightnews hr
+{
+    height: 1px;
+    width: 200%;
+    border: none;
+    background-color: white;
+}
+.rightnews h1
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.rightnews p
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-left: 800%;
+}
+.rightnews h2
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    margin-left: 800%;
+}
+.rightnews label
+{
+    margin-left: 80%;
+}
+.rightnews .heads3
+{
+    margin-left:45% ;
+    font-size: 25px;
+    margin-bottom: 10%;
+    text-transform: uppercase;
+    width: 100%;
+}
+#year
+{
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -402,14 +411,14 @@ footer
     margin-top: 5%;
     color: black;
     margin-bottom: 10%;
-    margin-left: 0%;
+    margin-left: -50%;
     width: 200%;
     height: auto;
-    gap: 10%;  
+    gap: 3%;  
     flex: 0 0 33.333333%;
-  }
-  .date
-  {
+}
+.date
+{
     border: 1px solid black;
     background-color: white;
     color: black;
@@ -419,24 +428,74 @@ footer
     cursor: pointer;
     border-radius: 4rem;
     
-  }
-  .date span
-  {
+}
+.date span
+{
     font-size: 20pc;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  }
-  .date h1
-  {
+}
+.date h1
+{
     font-family: cursive;
     font-size: 3pc;
-  }
-  .date p
-  {
+}
+.date p
+{
     font-family: cursive;
     font-size: 1pc;
     margin-top: -10%;
-  }
-  .date a
-  {
+}
+.date a
+{
     color: black;
-  }
+}
+#years
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    margin-top: 5%;
+    color: black;
+    margin-bottom: 10%;
+    margin-left: -50%;
+    width: 200%;
+    height: auto;
+    gap: 3%;  
+    flex: 0 0 33.333333%;
+}
+.dates
+{
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+    padding: 20px;
+    margin-bottom: 5%;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4rem;
+    
+}
+.dates span
+{
+    font-size: 20pc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.dates h1
+{
+    font-family: cursive;
+    font-size: 3pc;
+}
+.dates p
+{
+    font-family: cursive;
+    font-size: 1pc;
+    margin-top: -10%;
+}
+.dates a
+{
+    color: black;
+}
+#dChange{
+  display: none;
+}

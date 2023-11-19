@@ -53,7 +53,7 @@ a
 {
     margin-top: 0;
     display: grid;
-    grid-template-columns:auto auto auto auto;
+    grid-template-columns:repeat(5,auto);
     justify-content: space-evenly;
     text-align: center;
     width: 100%;
@@ -76,10 +76,10 @@ a
 #sec1 h3
 {
     font-size: 80px;
-    color: red;
+    color: lightblue;
     text-align: center;
     margin-bottom: 10px;
-    font-family: 'Bloody', sans-serif;                                           
+    /* font-family: 'Bloody', sans-serif; */
 }
 #popup-container {
   display: none;
@@ -117,10 +117,10 @@ a
     font-size: 20px;
     width: 53%;
     margin-left: 23%;
-    color: red;
+    color: grey;
     text-align: center;
     opacity: 0.3;
-    font-family: 'Bloody', sans-serif;                                           
+    /* font-family: 'Bloody', sans-serif;*/
 }
 #sec1 p:hover
 {
@@ -283,8 +283,8 @@ footer
     margin-bottom:12px;
     font-weight:bold;
     font-size:16px;
-    font-family: 'Bloody', sans-serif;
-    color: red;
+    /* font-family: 'Bloody', sans-serif; */
+    color: white;
 }
   
   .row ul 
@@ -294,8 +294,8 @@ footer
     line-height:1.6;
     font-size:14px;
     margin-bottom:0;
-    font-family: 'Bloody', sans-serif;
-    color: red;
+    /* font-family: 'Bloody', sans-serif; */
+    color: grey;
 }
   
   .row ul a 
@@ -313,8 +313,8 @@ footer
 {
     margin-bottom:36px;
     margin-top: -23px;
-    font-family: 'Bloody', sans-serif;
-    color: red;
+    /* font-family: 'Bloody', sans-serif; */
+    color: grey;
 }
   
   .item.text p
@@ -361,8 +361,8 @@ footer
     font-size:13px;
     margin-bottom:0;
     width: 130px;
-    font-family: 'Bloody', sans-serif;
-    color: red;
+    /* font-family: 'Bloody', sans-serif; */
+    color: grey;
 }
 .yousef{
   display: flex;
@@ -457,8 +457,8 @@ footer
    width: auto;
    height: auto;
    margin-left: 78%;
-   margin-top: 10%;
-   z-index: -1;
+   top: 65%;
+   z-index: 1;
   }
   #feedback-form h2
   {
@@ -497,17 +497,12 @@ footer
     display: none;
   }
   .grid-container {
-    display: grid;
-    grid-template-columns: auto ;
-    background-color: transparent;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
   }
   .grid-item {
-    background:transparent;
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 30px;
-    text-align: center;
+    margin-top: 3%;
+    padding-bottom: 2%;
     border-bottom: 1px solid white;
   }
   .grid-item img
@@ -517,28 +512,22 @@ footer
     cursor: pointer;
     float: left;
   }
-  a
+  .grid-item-text
   {
     text-decoration: none;
     color: #F6E3C5;
+    font-size: 30px;
     text-align: center;
-  }
-  h5
-  { 
-    color: #fff;
-    font-size: 0.8em;
-    text-align: center;
-    margin-top: 13%;
   }
   #sec2 .close
   {
     color: red;
-    font-family: 'Bloody', sans-serif;
+    /* font-family: 'Bloody', sans-serif; */
   }
   #sec2 .open
   {
     color: green;
-    font-family: 'Bloody', sans-serif;
+    /* font-family: 'Bloody', sans-serif; */
   }
   .slideshow-container {
    max-width: 1000px;
@@ -635,4 +624,76 @@ footer
     flex: 0 0 33.333333%;
     color: black;
     margin-left: 15%;
+  }
+  #dChange{
+    display: none;
+  }
+  /* matches style */
+  #match h2
+  {
+      color: red;
+      margin-top: 0px;
+      text-transform: uppercase;
+      border-top: 1px solid white;
+      border-right: 1px solid white;
+      text-align: center;
+  }
+  #match img
+  {
+      float: left;
+      width: 30%;
+      margin-top: 3%;
+  } 
+  #match h3
+  {
+      color: white;
+      text-align: center;
+      width: 50%;
+      margin-left: 40%;
+      font-size: 30px;
+  }
+  #match h5
+  {
+      text-align: center;
+      color: grey;
+  }
+  section #match
+  {
+      display: grid;
+      grid-template-columns:100% ;
+  }
+  #marge span 
+  {
+      color: #86C8BC;
+      font-size: 37px;
+      text-transform: uppercase;
+      margin-right: 10;
+      margin-top: 5%;
+  }
+  #marge
+  {
+      display: grid;
+      grid-template-columns: 38% 24% 38%;
+  }
+  #marge span
+  {
+      text-align: center;
+  }
+  #marge h1
+  {
+      color: white;
+  }
+  #type main
+  {
+      text-align: center;
+      color:#579BB1 ;
+      font-weight: bold;
+      font-size: 100px;
+  }
+  #match-date
+  {
+      text-align: center;
+      font-size: 20px;
+      color: grey;
+      gap: 20px;
   }

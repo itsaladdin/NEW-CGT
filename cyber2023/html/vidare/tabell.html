@@ -11,8 +11,10 @@
     <title>News CGT</title>
     
     <style>
-        #years
-{
+
+    @media (min-width: 320px) and (max-width: 480px) {
+    #years
+    {
     display: flex;
     flex-wrap: wrap;
     text-align: center;
@@ -24,10 +26,9 @@
     width: 100%;
     height: auto;
     gap: 3%;  
-    flex: 0 0 33.333333%;
-}
-.dates
-{
+    }
+    .dates
+    {
     border: 1px solid black;
     background-color: white;
     color: black;
@@ -36,77 +37,28 @@
     text-align: center;
     cursor: pointer;
     border-radius: 4rem;
-}
-.dates span
-{
-    font-size: 20pc;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-.dates h1
-{
-    font-family: cursive;
-    font-size: 3pc;
-}
-.dates p
-{
-    font-family: cursive;
-    font-size: 1pc;
-    margin-top: -10%;
-}
-a
-{
-    color: black;
-    text-decoration: none;
-}
-
-
-    @media (min-width: 320px) and (max-width: 480px) {
-    #years
-    {
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        margin-top: 5%;
-        color: black;
-        margin-bottom: 10%;
-        margin-left: 0%;
-        width: 100%;
-        height: auto;
-        gap: 3%;  
-        flex: 0 0 33.333333%;
-    }
-    .dates
-    {
-        border: 1px solid black;
-        background-color: white;
-        color: black;
-        padding: 20px;
-        margin-bottom: 5%;
-        text-align: center;
-        cursor: pointer;
-        border-radius: 4rem;
-        
+    flex-grow: 1;
+    flex-basis: 200;
     }
     .dates span
     {
-        font-size: 8pc;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 8pc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
-    .dates h1
+    #years img
     {
-        font-family: cursive;
-        font-size: 3pc;
+        width: 100%;
+        height: 250px;
     }
     .dates p
     {
-        font-family: cursive;
-        font-size: 1pc;
-        margin-top: -10%;
+    font-family: cursive;
+    font-size: 1pc;
+    margin-top: -10%;
     }
     .dates a
     {
-        color: black;
+    color: black;
     }
 
     }
@@ -128,7 +80,7 @@ a
                 <a href="../../../index.html"class="menu__item"><li>Hem</li></a>
                 <a href="../../html/all-in/home-about.html" class="menu__item" id="Change"> <li>Om Oss</li></a>
                 <a href="../../html/all-in/News.html"class="menu__item"><li>Nyheter</li></a>
-                <a href="../../html/tournament/tournament-table-pingis-2023.html" class="menu__item"><li>Tabell</li></a>
+                <a href="../../html/tournament/tournament-table-pingis-2023.html" id="active" class="menu__item"><li>Tabell</li></a>
             </ul>
     
         </nav>
@@ -139,17 +91,17 @@ a
 
     <aside id="newsaside">
         <section id="years">
-            <a href="../vidare/tabell.html">
-            <div class="dates">
-                <h1><span>2023</span></h1>
-                <p>2023 Tabeller</p>
-            </div></a>
-           <!--  <a href="../date/2023/november/november.html">
-            <div class="date">
-                <h1><span>11</span><br> November</h1>
-                <p>Läs mer om November news</p>
-            </div></a>
-            <div class="date">
+            <a href="../tournament/tournament-table-pingis-2023.html">
+                <div class="dates">
+                    <img src="../../img/vidare/pingis.png" alt="">
+                    <p>PINGIS</p>
+                </div></a>
+             <a href="../tournament/tournament-table-uno-2023.html">
+                <div class="dates">
+                    <img src="../../img/vidare/uno.png" alt="">
+                    <p>UNO</p>
+                </div></a>
+            <!--<div class="date">
                 <h1><span>12</span><br> December</h1>
                 <p>Läs mer om December news</p>
             </div>
@@ -176,7 +128,7 @@ a
             <div class="date">
                 <h1><span>06</span><br> Juni</h1>
                 <p>Läs mer om December news</p>
-            </div> -->
+            </div>  -->
         </section>
     </aside>
     </main>
@@ -213,7 +165,7 @@ a
                 <a href="https://www.snapchat.com/add/cybergottalent"><i class="icon ion-social-snapchat"></i></a>
                 <a href="https://www.instagram.com/cybergottalent/"><i class="icon ion-social-instagram"></i></a>
             </div>
-            <a href="https://www.cybergymnasiet.se/"><img class="footer-img" src="../../img/logo/logo-cybergymnasiet.png" alt=""></a>
+            <a href="#"><img class="footer-img" src="../../img/logo/logo-cybergymnasiet.png" alt=""></a>
             <p class="copyright">Cybergymnasiet © 2023</p>
         </div>
     </footer>
